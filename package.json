@@ -3,7 +3,7 @@
 	"displayName": "vscode-convert-utils",
 	"description": "convert utils",
 	"version": "0.0.1",
-	"publisher": "mchen",
+	"publisher": "vscode-convert-utils",
 	"repository": {
 		"url": "https://github.com/qq444716720/vscode-convert-utils"
 	},
