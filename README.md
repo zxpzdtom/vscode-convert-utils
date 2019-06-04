@@ -5,6 +5,6 @@
 ## Usages
 ![convert](convert.gif)
 
-mac: command+control+t
+mac: Command + Control + T
 
-windows: ctrl+alt+t
+windows: Ctrl + Alt + T
