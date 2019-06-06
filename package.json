@@ -3,7 +3,7 @@
 	"displayName": "vscode convert utils",
 	"description": "convert string utils for vscode",
 	"version": "1.0.2",
-	"publisher": "qq444716720",
+	"publisher": "vscode-convert-utils",
 	"icon": "logo.png",
 	"repository": {
 		"url": "https://github.com/qq444716720/vscode-convert-utils"
