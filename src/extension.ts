@@ -22,10 +22,10 @@ export function activate(context: vscode.ExtensionContext) {
 					} else if (/^(?=.*_?)(?!.*[- A-Z]).+$/.test(item)) { // 至少一个小写和一个下划线，不含连接符和空格 => FOOT_BAR
 						item = item.toUpperCase();
 					} else if (/(?!.*[a-z]).+$/.test(item)) { // 字母全大写
-						let temp = item.split(/[- _]/).map( // S纪念馆12-JNJDG_S S123 => ["S纪念馆12", "JNJDG", "S", "S123"]
-							(s: { charAt: (arg0: number) => { toUpperCase: () => string | number; }; slice: (arg0: number) => { toLowerCase: () => string | number; }; }) => `${s.charAt(0).toUpperCase()}${s.slice(1).toLowerCase()}` // ["S纪念馆12", "Jnjdg", "S", "S123"]
+						let temp = item.split(/[- _]/).map( // S12-JNJDG_S S123 => ["S12", "JNJDG", "S", "S123"]
+							(s: { charAt: (arg0: number) => { toUpperCase: () => string | number; }; slice: (arg0: number) => { toLowerCase: () => string | number; }; }) => `${s.charAt(0).toUpperCase()}${s.slice(1).toLowerCase()}` // ["S12", "Jnjdg", "S", "S123"]
 						).join('');
-						item = temp.charAt(0).toLowerCase() + temp.slice(1); // s纪念馆12JnjdgSS123
+						item = temp.charAt(0).toLowerCase() + temp.slice(1); // s12JnjdgSS123
 					} else if (/^[^A-Z](?!.*[- _]).+$/.test(item)) { // 驼峰 => foot-bar
 						item = item.replace(/([A-Z])/g, '-$1').replace(/[-_\s]+/g, '-').toLowerCase();
 					} else if (/^(?=.*-)(?!.*[_ ]).+$/.test(item)) { // foot-bar => FootBar
