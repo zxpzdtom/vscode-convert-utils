@@ -1,5 +1,5 @@
 ## 访问量
-![](https://counter.dalin.cool/zxpzdtom/vscode-convert-utils)
+![](https://counter.anyask.dev/zxpzdtom/vscode-convert-utils)
 
 ## vscode-convert-utils
 
